@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <!--base(href="/")-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+        <!-- Title -->
+        <title>Main Page</title>
+        <!-- SEO Meta -->
+        <meta name="description" content="Description">
+        <meta name="keywords" content="keyword">
+        <!-- Favicon -->
+        <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+      <script type="module" crossorigin src="/assets/main-af0b6b55.js"></script>
+      <link rel="stylesheet" href="/assets/main-636cddcd.css">
+    </head>
+    <body>
+        <!-- Header -->
+        
+<header class="header" id="header">
+  <div class="header__top">
+    <div class="container header__top-container">
+      <div class="logo header__logo"><a class="logo__link" href="#" aria-label="logo">
+          <svg class="logo__img logo__img--hidden-lg" width="343" height="58">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+          <svg class="logo__img logo__img--visible-lg" width="31" height="36">
+            <use xlink:href="img/sprite.svg#logo-single"></use>
+          </svg></a></div>
+      <button class="search-toggle header__search-toggle" type="button" data-toggle="search" aria-expanded="false" aria-label="Show search">
+        <svg class="search-toggle__icon" width="30" height="30">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </button>
+      <button class="email-toggle header__email-toggle" type="button" data-toggle="email" aria-expanded="false" aria-label="Show email">
+        <svg class="email-toggle__icon" width="30" height="30">
+          <use xlink:href="img/sprite.svg#email"></use>
+        </svg>
+      </button>
+      <div class="email header__email" id="email">
+        <div class="email__title">Пишіть Нам</div><a class="email__link" href="mailto:info@sbt.localization.com.ua">info@sbt.localization.com.ua</a>
+      </div>
+      <div class="dropdown header__lang">
+        <button class="dropdown__toggle" type="button" data-toggle="lang-dropdown" aria-expanded="false">UA
+          <svg class="dropdown__toggle-arrow" width="11" height="7">
+            <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+          </svg>
+        </button>
+        <ul class="dropdown__list" id="lang-dropdown" aria-hidden="true">
+          <li class="dropdown__item"><a class="dropdown__link" href="#">EN</a></li>
+          <li class="dropdown__item"><a class="dropdown__link" href="#">DE</a></li>
+        </ul>
+      </div>
+      <button class="burger header__burger" type="button" aria-expanded="false" data-nav-toggle="data-nav-toggle" aria-label="Show menu">
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+      </button>
+      <div class="header__buttons"><a class="button button--md button--outline header__button" href="#">Поточні проекти</a><a class="button button--md button--blue header__button" href="#footer">Підтримайте наc</a></div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container header__bottom-container">
+      <button class="menu-button header__menu-button" type="button" aria-expanded="false" data-nav-toggle="data-nav-toggle" aria-label="Show menu">
+        <div class="menu-button__line"></div>
+        <div class="menu-button__line"></div>
+        <div class="menu-button__line"></div>
+      </button>
+      <nav class="menu header__menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link is-active" href="#">Наші проекти</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Новини</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Статті</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Про нас</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Вакансії</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="search header__search" id="search">
+        <form class="search-form">
+          <input class="input search-form__input" type="text" name="inputSearch" placeholder="Пошук" autocomplete="off" required="required"/>
+          <button class="search-form__button" type="button" aria-label="Search">
+            <svg class="search-form__button-icon" width="21" height="21">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+
+        <!-- Main -->
+        <main id="main" class="main">
+            
+<section class="banner-section">
+  <picture class="banner-section__bg animation-down" data-delay="0">
+    <source srcset="img/banner-img-mobile@2x.webp 2x, img/banner-img-mobile.webb" width="375" height="262" media="(max-width: 767.98px)"/><img class="banner-section__bg-img" src="img/banner-img.webp" srcset="img/banner-img@2x.webp 2x" width="1175" height="707" alt="alt"/>
+  </picture>
+  <div class="container banner-section__container">
+    <div class="banner-section__content">
+      <h1 class="banner-section__title animation-down" data-delay="0.4">ШЛЯКБИТРАФ</h1>
+      <p class="banner-section__descr animation-down" data-delay="0.6">ПЕРЕКЛАД ІГОР УКРАЇНСЬКОЮ ШЛЯХЕТНО ТА ВЛУЧНО!</p><a class="button button--white-hover banner-section__button animation-down" data-delay="0.8" href="#">Наші проекти </a>
+    </div><a class="banner-section__next" href="#projects-section">
+      <svg class="banner-section__next-icon" width="23" height="13">
+        <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+      </svg></a>
+  </div>
+</section>
+            
+<section class="projects-section" id="projects-section">
+  <div class="container projects-section__container">
+    <header class="section-header">
+      <h2 class="section-title section-header__title">Наші проекти</h2><a class="button section-header__button" href="#">Усі проекти</a>
+    </header>
+  </div>
+  <div class="projects-slider">
+    <div class="swiper projects-slider__swiper">
+      <div class="swiper-wrapper projects-slider__wrapper">
+        <div class="swiper-slide projects-slider__slide"><a class="project-card" href="#">
+            <picture class="project-card__picture"><img class="project-card__img" src="img/projects/project-img-1.webp" srcset="img/projects/project-img-1@2x.webp 2x" loading="lazy" width="350" height="400" alt="alt"/></picture>
+            <h3 class="project-card__title">Sherlock Holmes Chapter One</h3>
+            <div class="project-card__content">
+              <h4 class="project-card__subtitle">Sherlock Holmes Chapter One</h4>
+              <p class="project-card__text">Шерлок Холмс не зразу став славетним детективом, яким він постає в книжках та фільмах. Спочатку він був звичайним собі юнаком, хіба дуже кмітливим і дещо зарозумілим.</p>
+            </div></a></div>
+        <div class="swiper-slide projects-slider__slide"><a class="project-card" href="#">
+            <picture class="project-card__picture"><img class="project-card__img" src="img/projects/project-img-2.webp" srcset="img/projects/project-img-2@2x.webp 2x" loading="lazy" width="350" height="400" alt="alt"/></picture>
+            <h3 class="project-card__title">Sherlock Holmes: The Awakened</h3>
+            <div class="project-card__content">
+              <h4 class="project-card__subtitle">Sherlock Holmes: The Awakened</h4>
+              <p class="project-card__text">Шерлок Холмс не зразу став славетним детективом, яким він постає в книжках та фільмах. Спочатку він був звичайним собі юнаком, хіба дуже кмітливим і дещо зарозумілим.</p>
+            </div></a></div>
+        <div class="swiper-slide projects-slider__slide"><a class="project-card" href="#">
+            <picture class="project-card__picture"><img class="project-card__img" src="img/projects/project-img-1.webp" srcset="img/projects/project-img-1@2x.webp 2x" loading="lazy" width="350" height="400" alt="alt"/></picture>
+            <h3 class="project-card__title">Sherlock Holmes Chapter One</h3>
+            <div class="project-card__content">
+              <h4 class="project-card__subtitle">Sherlock Holmes Chapter One</h4>
+              <p class="project-card__text">Шерлок Холмс не зразу став славетним детективом, яким він постає в книжках та фільмах. Спочатку він був звичайним собі юнаком, хіба дуже кмітливим і дещо зарозумілим.</p>
+            </div></a></div>
+        <div class="swiper-slide projects-slider__slide"><a class="project-card" href="#">
+            <picture class="project-card__picture"><img class="project-card__img" src="img/projects/project-img-2.webp" srcset="img/projects/project-img-2@2x.webp 2x" loading="lazy" width="350" height="400" alt="alt"/></picture>
+            <h3 class="project-card__title">Sherlock Holmes: The Awakened</h3>
+            <div class="project-card__content">
+              <h4 class="project-card__subtitle">Sherlock Holmes: The Awakened</h4>
+              <p class="project-card__text">Шерлок Холмс не зразу став славетним детективом, яким він постає в книжках та фільмах. Спочатку він був звичайним собі юнаком, хіба дуже кмітливим і дещо зарозумілим.</p>
+            </div></a></div>
+        <div class="swiper-slide projects-slider__slide"><a class="project-card" href="#">
+            <picture class="project-card__picture"><img class="project-card__img" src="img/projects/project-img-1.webp" srcset="img/projects/project-img-1@2x.webp 2x" loading="lazy" width="350" height="400" alt="alt"/></picture>
+            <h3 class="project-card__title">Sherlock Holmes Chapter One</h3>
+            <div class="project-card__content">
+              <h4 class="project-card__subtitle">Sherlock Holmes Chapter One</h4>
+              <p class="project-card__text">Шерлок Холмс не зразу став славетним детективом, яким він постає в книжках та фільмах. Спочатку він був звичайним собі юнаком, хіба дуже кмітливим і дещо зарозумілим.</p>
+            </div></a></div>
+        <div class="swiper-slide projects-slider__slide"><a class="project-card" href="#">
+            <picture class="project-card__picture"><img class="project-card__img" src="img/projects/project-img-2.webp" srcset="img/projects/project-img-2@2x.webp 2x" loading="lazy" width="350" height="400" alt="alt"/></picture>
+            <h3 class="project-card__title">Sherlock Holmes: The Awakened</h3>
+            <div class="project-card__content">
+              <h4 class="project-card__subtitle">Sherlock Holmes: The Awakened</h4>
+              <p class="project-card__text">Шерлок Холмс не зразу став славетним детективом, яким він постає в книжках та фільмах. Спочатку він був звичайним собі юнаком, хіба дуже кмітливим і дещо зарозумілим.</p>
+            </div></a></div>
+        <div class="swiper-slide projects-slider__slide"><a class="project-card" href="#">
+            <picture class="project-card__picture"><img class="project-card__img" src="img/projects/project-img-1.webp" srcset="img/projects/project-img-1@2x.webp 2x" loading="lazy" width="350" height="400" alt="alt"/></picture>
+            <h3 class="project-card__title">Sherlock Holmes Chapter One</h3>
+            <div class="project-card__content">
+              <h4 class="project-card__subtitle">Sherlock Holmes Chapter One</h4>
+              <p class="project-card__text">Шерлок Холмс не зразу став славетним детективом, яким він постає в книжках та фільмах. Спочатку він був звичайним собі юнаком, хіба дуже кмітливим і дещо зарозумілим.</p>
+            </div></a></div>
+        <div class="swiper-slide projects-slider__slide"><a class="project-card" href="#">
+            <picture class="project-card__picture"><img class="project-card__img" src="img/projects/project-img-2.webp" srcset="img/projects/project-img-2@2x.webp 2x" loading="lazy" width="350" height="400" alt="alt"/></picture>
+            <h3 class="project-card__title">Sherlock Holmes: The Awakened</h3>
+            <div class="project-card__content">
+              <h4 class="project-card__subtitle">Sherlock Holmes: The Awakened</h4>
+              <p class="project-card__text">Шерлок Холмс не зразу став славетним детективом, яким він постає в книжках та фільмах. Спочатку він був звичайним собі юнаком, хіба дуже кмітливим і дещо зарозумілим.</p>
+            </div></a></div>
+        <div class="swiper-slide projects-slider__slide"><a class="project-card" href="#">
+            <picture class="project-card__picture"><img class="project-card__img" src="img/projects/project-img-1.webp" srcset="img/projects/project-img-1@2x.webp 2x" loading="lazy" width="350" height="400" alt="alt"/></picture>
+            <h3 class="project-card__title">Sherlock Holmes Chapter One</h3>
+            <div class="project-card__content">
+              <h4 class="project-card__subtitle">Sherlock Holmes Chapter One</h4>
+              <p class="project-card__text">Шерлок Холмс не зразу став славетним детективом, яким він постає в книжках та фільмах. Спочатку він був звичайним собі юнаком, хіба дуже кмітливим і дещо зарозумілим.</p>
+            </div></a></div>
+        <div class="swiper-slide projects-slider__slide"><a class="project-card" href="#">
+            <picture class="project-card__picture"><img class="project-card__img" src="img/projects/project-img-2.webp" srcset="img/projects/project-img-2@2x.webp 2x" loading="lazy" width="350" height="400" alt="alt"/></picture>
+            <h3 class="project-card__title">Sherlock Holmes: The Awakened</h3>
+            <div class="project-card__content">
+              <h4 class="project-card__subtitle">Sherlock Holmes: The Awakened</h4>
+              <p class="project-card__text">Шерлок Холмс не зразу став славетним детективом, яким він постає в книжках та фільмах. Спочатку він був звичайним собі юнаком, хіба дуже кмітливим і дещо зарозумілим.</p>
+            </div></a></div>
+      </div>
+      <div class="swiper-scrollbar projects-slider__scrollbar"></div>
+    </div>
+  </div><a class="button projects-section__more-button" href="#">Усі проекти</a>
+</section>
+            
+<section class="news-section news-section--blue">
+  <div class="container news-section__container">
+    <header class="section-header">
+      <h2 class="section-title section-header__title">Новини</h2><a class="button section-header__button" href="#">Усі новини</a>
+    </header>
+    <div class="news-slider">
+      <div class="swiper news-slider__swiper">
+        <div class="swiper-wrapper news-slider__wrapper">
+          <div class="swiper-slide news-slider__slide">
+            <article class="news-card"><a class="news-card__link" href="#"> 
+                <picture class="news-card__picture"><img class="news-card__img" src="img/news-img-1.webp" srcset="img/news-img-1@2x.webp 2x" loading="lazy" width="540" height="303" alt="alt"/></picture>
+                <h3 class="news-card__title">The Stanley Parable: Ultra Deluxe in Ukrainian!</h3>
+                <p class="news-card__descr">Celebrating The Stanley Parable: Ultra Deluxe – Ukrainian localization is now available </p></a>
+              <div class="news-card__feedback">
+                <div class="rating" data-rating="4">
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                </div><a class="blue-link" href="#">5 відгуків </a>
+              </div><a class="button button--outline news-card__button" href="#">Читати детальніше</a>
+            </article>
+          </div>
+          <div class="swiper-slide news-slider__slide">
+            <article class="news-card"><a class="news-card__link" href="#"> 
+                <picture class="news-card__picture"><img class="news-card__img" src="img/news-img-2.webp" srcset="img/news-img-2@2x.webp 2x" loading="lazy" width="540" height="303" alt="alt"/></picture>
+                <h3 class="news-card__title">The Stanley Parable: Ultra Deluxe in Ukrainian!</h3>
+                <p class="news-card__descr">Celebrating The Stanley Parable: Ultra Deluxe – Ukrainian localization is now available</p></a>
+              <div class="news-card__feedback">
+                <div class="rating" data-rating="4">
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                </div><a class="blue-link" href="#">5 відгуків </a>
+              </div><a class="button button--outline news-card__button" href="#">Читати детальніше</a>
+            </article>
+          </div>
+          <div class="swiper-slide news-slider__slide">
+            <article class="news-card"><a class="news-card__link" href="#"> 
+                <picture class="news-card__picture"><img class="news-card__img" src="img/news-img-1.webp" srcset="img/news-img-1@2x.webp 2x" loading="lazy" width="540" height="303" alt="alt"/></picture>
+                <h3 class="news-card__title">The Stanley Parable: Ultra Deluxe in Ukrainian!</h3>
+                <p class="news-card__descr">Celebrating The Stanley Parable: Ultra Deluxe – Ukrainian localization is now available </p></a>
+              <div class="news-card__feedback">
+                <div class="rating" data-rating="4">
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                </div><a class="blue-link" href="#">5 відгуків </a>
+              </div><a class="button button--outline news-card__button" href="#">Читати детальніше</a>
+            </article>
+          </div>
+          <div class="swiper-slide news-slider__slide">
+            <article class="news-card"><a class="news-card__link" href="#"> 
+                <picture class="news-card__picture"><img class="news-card__img" src="img/news-img-2.webp" srcset="img/news-img-2@2x.webp 2x" loading="lazy" width="540" height="303" alt="alt"/></picture>
+                <h3 class="news-card__title">The Stanley Parable: Ultra Deluxe in Ukrainian!</h3>
+                <p class="news-card__descr">Celebrating The Stanley Parable: Ultra Deluxe – Ukrainian localization is now available</p></a>
+              <div class="news-card__feedback">
+                <div class="rating" data-rating="4">
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                </div><a class="blue-link" href="#">5 відгуків </a>
+              </div><a class="button button--outline news-card__button" href="#">Читати детальніше</a>
+            </article>
+          </div>
+          <div class="swiper-slide news-slider__slide">
+            <article class="news-card"><a class="news-card__link" href="#"> 
+                <picture class="news-card__picture"><img class="news-card__img" src="img/news-img-1.webp" srcset="img/news-img-1@2x.webp 2x" loading="lazy" width="540" height="303" alt="alt"/></picture>
+                <h3 class="news-card__title">The Stanley Parable: Ultra Deluxe in Ukrainian!</h3>
+                <p class="news-card__descr">Celebrating The Stanley Parable: Ultra Deluxe – Ukrainian localization is now available </p></a>
+              <div class="news-card__feedback">
+                <div class="rating" data-rating="4">
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                </div><a class="blue-link" href="#">5 відгуків </a>
+              </div><a class="button button--outline news-card__button" href="#">Читати детальніше</a>
+            </article>
+          </div>
+          <div class="swiper-slide news-slider__slide">
+            <article class="news-card"><a class="news-card__link" href="#"> 
+                <picture class="news-card__picture"><img class="news-card__img" src="img/news-img-2.webp" srcset="img/news-img-2@2x.webp 2x" loading="lazy" width="540" height="303" alt="alt"/></picture>
+                <h3 class="news-card__title">The Stanley Parable: Ultra Deluxe in Ukrainian!</h3>
+                <p class="news-card__descr">Celebrating The Stanley Parable: Ultra Deluxe – Ukrainian localization is now available</p></a>
+              <div class="news-card__feedback">
+                <div class="rating" data-rating="4">
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                </div><a class="blue-link" href="#">5 відгуків </a>
+              </div><a class="button button--outline news-card__button" href="#">Читати детальніше</a>
+            </article>
+          </div>
+        </div>
+        <div class="swiper-scrollbar news-slider__scrollbar"></div>
+      </div>
+    </div><a class="button news-section__more-button" href="#">Усі новини</a>
+  </div>
+</section>
+            
+<section class="news-section">
+  <div class="container news-section__container">
+    <header class="section-header">
+      <h2 class="section-title section-header__title">Статті</h2><a class="button section-header__button" href="#">Усі статті</a>
+    </header>
+    <div class="news-slider">
+      <div class="swiper news-slider__swiper">
+        <div class="swiper-wrapper news-slider__wrapper">
+          <div class="swiper-slide news-slider__slide">
+            <article class="news-card"><a class="news-card__link" href="#"> 
+                <picture class="news-card__picture"><img class="news-card__img" src="img/news-img-1.webp" srcset="img/news-img-1@2x.webp 2x" loading="lazy" width="540" height="303" alt="alt"/></picture>
+                <h3 class="news-card__title">The Stanley Parable: Ultra Deluxe in Ukrainian!</h3>
+                <p class="news-card__descr">Celebrating The Stanley Parable: Ultra Deluxe – Ukrainian localization is now available </p></a>
+              <div class="news-card__feedback">
+                <div class="rating" data-rating="4">
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                </div><a class="blue-link" href="#">5 відгуків </a>
+              </div><a class="button button--outline news-card__button" href="#">Читати детальніше</a>
+            </article>
+          </div>
+          <div class="swiper-slide news-slider__slide">
+            <article class="news-card"><a class="news-card__link" href="#"> 
+                <picture class="news-card__picture"><img class="news-card__img" src="img/news-img-2.webp" srcset="img/news-img-2@2x.webp 2x" loading="lazy" width="540" height="303" alt="alt"/></picture>
+                <h3 class="news-card__title">The Stanley Parable: Ultra Deluxe in Ukrainian!</h3>
+                <p class="news-card__descr">Celebrating The Stanley Parable: Ultra Deluxe – Ukrainian localization is now available</p></a>
+              <div class="news-card__feedback">
+                <div class="rating" data-rating="4">
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                </div><a class="blue-link" href="#">5 відгуків </a>
+              </div><a class="button button--outline news-card__button" href="#">Читати детальніше</a>
+            </article>
+          </div>
+          <div class="swiper-slide news-slider__slide">
+            <article class="news-card"><a class="news-card__link" href="#"> 
+                <picture class="news-card__picture"><img class="news-card__img" src="img/news-img-1.webp" srcset="img/news-img-1@2x.webp 2x" loading="lazy" width="540" height="303" alt="alt"/></picture>
+                <h3 class="news-card__title">The Stanley Parable: Ultra Deluxe in Ukrainian!</h3>
+                <p class="news-card__descr">Celebrating The Stanley Parable: Ultra Deluxe – Ukrainian localization is now available </p></a>
+              <div class="news-card__feedback">
+                <div class="rating" data-rating="4">
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                </div><a class="blue-link" href="#">5 відгуків </a>
+              </div><a class="button button--outline news-card__button" href="#">Читати детальніше</a>
+            </article>
+          </div>
+          <div class="swiper-slide news-slider__slide">
+            <article class="news-card"><a class="news-card__link" href="#"> 
+                <picture class="news-card__picture"><img class="news-card__img" src="img/news-img-2.webp" srcset="img/news-img-2@2x.webp 2x" loading="lazy" width="540" height="303" alt="alt"/></picture>
+                <h3 class="news-card__title">The Stanley Parable: Ultra Deluxe in Ukrainian!</h3>
+                <p class="news-card__descr">Celebrating The Stanley Parable: Ultra Deluxe – Ukrainian localization is now available</p></a>
+              <div class="news-card__feedback">
+                <div class="rating" data-rating="4">
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                </div><a class="blue-link" href="#">5 відгуків </a>
+              </div><a class="button button--outline news-card__button" href="#">Читати детальніше</a>
+            </article>
+          </div>
+          <div class="swiper-slide news-slider__slide">
+            <article class="news-card"><a class="news-card__link" href="#"> 
+                <picture class="news-card__picture"><img class="news-card__img" src="img/news-img-1.webp" srcset="img/news-img-1@2x.webp 2x" loading="lazy" width="540" height="303" alt="alt"/></picture>
+                <h3 class="news-card__title">The Stanley Parable: Ultra Deluxe in Ukrainian!</h3>
+                <p class="news-card__descr">Celebrating The Stanley Parable: Ultra Deluxe – Ukrainian localization is now available </p></a>
+              <div class="news-card__feedback">
+                <div class="rating" data-rating="4">
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                </div><a class="blue-link" href="#">5 відгуків </a>
+              </div><a class="button button--outline news-card__button" href="#">Читати детальніше</a>
+            </article>
+          </div>
+          <div class="swiper-slide news-slider__slide">
+            <article class="news-card"><a class="news-card__link" href="#"> 
+                <picture class="news-card__picture"><img class="news-card__img" src="img/news-img-2.webp" srcset="img/news-img-2@2x.webp 2x" loading="lazy" width="540" height="303" alt="alt"/></picture>
+                <h3 class="news-card__title">The Stanley Parable: Ultra Deluxe in Ukrainian!</h3>
+                <p class="news-card__descr">Celebrating The Stanley Parable: Ultra Deluxe – Ukrainian localization is now available</p></a>
+              <div class="news-card__feedback">
+                <div class="rating" data-rating="4">
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                  <div class="rating__item"></div>
+                </div><a class="blue-link" href="#">5 відгуків </a>
+              </div><a class="button button--outline news-card__button" href="#">Читати детальніше</a>
+            </article>
+          </div>
+        </div>
+        <div class="swiper-scrollbar news-slider__scrollbar"></div>
+      </div>
+    </div><a class="button news-section__more-button" href="#">Усі статті</a>
+  </div>
+</section>
+            
+<section class="contacts-section">
+  <div class="container contacts-section__container">
+    <h2 class="section-title contacts-section__title">Залишились питання?</h2>
+    <h3 class="contacts-section__subtitle">Зв'яжіться з нами</h3>
+    <form class="form contacts-section__form" id="contacts-form" autocomplete="off" novalidate="novalidate">
+      <div class="form__row">
+        <div class="form__col form__col--4">
+          <input class="input form__input" id="inputName" type="text" name="inputName" placeholder="Ім’я *" data-error-message="Будь ласка, вкажіть своє імʼя" autocomplete="off" required="required"/>
+        </div>
+        <div class="form__col form__col--4">
+          <input class="input form__input" id="inputEmail" type="email" name="inputEmail" placeholder="Email *" data-error-message="Будь ласка, введіть email" autocomplete="off" required="required"/>
+        </div>
+        <div class="form__col form__col--4">
+          <select class="select sort-form__select" id="selectTheme" name="orderSelectCity5" aria-label="Select" data-error-message="Будь ласка, виберіть тему" required="required">
+            <option value="">Виберіть тему *</option>
+            <option value="1">Тема 1</option>
+            <option value="2">Тема 2</option>
+            <option value="3">Тема 3</option>
+            <option value="4">Тема 4</option>
+            <option value="5">Тема 5</option>
+            <option value="6">Тема 6</option>
+          </select>
+        </div>
+      </div>
+      <div class="form__group">
+        <textarea class="textarea" id="comment" name="comment" rows="5" placeholder="Ваше повідомлення *" autocomplete="off" data-error-message="Будь ласка, заповніть поле" required="required"></textarea>
+      </div>
+      <div class="form__row">
+        <div class="form__col form__col--3">
+          <div class="form__info">Завантажити зняток екрану (jpg, jpeg, png, не більше 5мб)</div>
+        </div>
+        <div class="form__col form__col--3">
+          <div class="file">
+            <input class="file__input" id="file1" type="file" name="file" accept=".doc, .docx, .rtf, .txt, .odt, .pdf"/>
+            <label class="file__label" for="file1"><span class="file__caption">Завантажити файл
+                <svg class="file__icon" width="24" height="24">
+                  <use xlink:href="img/sprite.svg#file"></use>
+                </svg></span><span class="file__name"></span>
+              <button class="file__clear" type="button">
+                <svg class="file__clear-icon" width="17" height="17">
+                  <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+              </button>
+            </label>
+          </div>
+        </div>
+        <div class="form__col form__col--3">
+          <div class="file">
+            <input class="file__input" id="file2" type="file" name="file" accept=".doc, .docx, .rtf, .txt, .odt, .pdf"/>
+            <label class="file__label" for="file2"><span class="file__caption">Завантажити файл
+                <svg class="file__icon" width="24" height="24">
+                  <use xlink:href="img/sprite.svg#file"></use>
+                </svg></span><span class="file__name"></span>
+              <button class="file__clear" type="button">
+                <svg class="file__clear-icon" width="17" height="17">
+                  <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+              </button>
+            </label>
+          </div>
+        </div>
+        <div class="form__col form__col--3">
+          <div class="file">
+            <input class="file__input" id="file3" type="file" name="file" accept=".doc, .docx, .rtf, .txt, .odt, .pdf"/>
+            <label class="file__label" for="file3"><span class="file__caption">Завантажити файл
+                <svg class="file__icon" width="24" height="24">
+                  <use xlink:href="img/sprite.svg#file"></use>
+                </svg></span><span class="file__name"></span>
+              <button class="file__clear" type="button">
+                <svg class="file__clear-icon" width="17" height="17">
+                  <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+              </button>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form__group form__group--center">
+        <div class="checkbox">
+          <input class="checkbox__input" id="checkboxAgree" type="checkbox" name="checkbox" value="true" required="required"/>
+          <label class="checkbox__label" for="checkboxAgree">Погоджуюсь з умовами <a class="checkbox__link" href="#">Політики конфіденційності</a></label>
+        </div>
+      </div>
+      <button class="button form__button">Відправити</button>
+    </form>
+  </div>
+</section>
+            
+<section class="social-section" id="social-section">
+  <div class="container social-section__container">
+    <h2 class="section-title social-section__title">Слідкуйте за нами</h2>
+    <address class="social social-section__social">
+      <ul class="social__list">
+        <li class="social__item"><a class="social__link" href="#" aria-label="donatello">
+            <svg class="social__icon" width="23" height="27">
+              <use xlink:href="img/sprite.svg#donatello"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link" href="#" aria-label="patreon">
+            <svg class="social__icon" width="28" height="29">
+              <use xlink:href="img/sprite.svg#patreon"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link" href="#" aria-label="cofee">
+            <svg class="social__icon" width="21" height="29">
+              <use xlink:href="img/sprite.svg#cofee"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link" href="#" aria-label="facebook">
+            <svg class="social__icon" width="17" height="32">
+              <use xlink:href="img/sprite.svg#facebook"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link" href="#" aria-label="x">
+            <svg class="social__icon" width="27" height="25">
+              <use xlink:href="img/sprite.svg#x"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link" href="#" aria-label="telegram">
+            <svg class="social__icon" width="27" height="24">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link" href="#" aria-label="linkedin">
+            <svg class="social__icon" width="22" height="21">
+              <use xlink:href="img/sprite.svg#linkedin"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link" href="#" aria-label="discord">
+            <svg class="social__icon" width="33" height="23">
+              <use xlink:href="img/sprite.svg#discord"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link" href="#" aria-label="instagram">
+            <svg class="social__icon" width="29" height="29">
+              <use xlink:href="img/sprite.svg#instagram"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link" href="#" aria-label="twitch">
+            <svg class="social__icon" width="25" height="28">
+              <use xlink:href="img/sprite.svg#twitch"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link" href="#" aria-label="youtube">
+            <svg class="social__icon" width="31" height="21">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link" href="#" aria-label="youtube">
+            <svg class="social__icon" width="31" height="21">
+              <use xlink:href="img/sprite.svg#youtube"></use>
+            </svg><span class="social__title">Освітній</span></a></li>
+        <li class="social__item"><a class="social__link" href="#" aria-label="mastodon">
+            <svg class="social__icon" width="31" height="32">
+              <use xlink:href="img/sprite.svg#mastodon"></use>
+            </svg></a></li>
+        <li class="social__item"><a class="social__link" href="#" aria-label="bluesky">
+            <svg class="social__icon" width="31" height="28">
+              <use xlink:href="img/sprite.svg#bluesky"></use>
+            </svg></a></li>
+      </ul>
+    </address>
+  </div>
+</section>
+        </main>
+
+        <!-- Footer -->
+        
+<footer class="footer" id="footer">
+  <div class="container footer__container">
+    <div class="footer__col">
+      <div class="footer__logo-group">
+        <div class="logo footer__logo"><a class="logo__link" href="#" aria-label="logo">
+            <svg class="logo__img" width="272" height="46">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg></a></div>
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Політика конфіденційності</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__col">
+      <nav class="footer-menu">
+        <button class="footer-menu__toggle" type="button" data-trigger="footer-menu-1" aria-expanded="true">Меню
+          <svg class="footer-menu__toggle-icon" width="11" height="7">
+            <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+          </svg>
+        </button>
+        <div class="footer-menu__inner" id="footer-menu-1" aria-hidden="false">
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Наші проекти</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Новини</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Статті</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Про нас</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Вакансії</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакти</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__col">
+      <nav class="footer-menu">
+        <button class="footer-menu__toggle" type="button" data-trigger="footer-menu-2" aria-expanded="true">Інформація
+          <svg class="footer-menu__toggle-icon" width="11" height="7">
+            <use xlink:href="img/sprite.svg#dropdown-arrow"></use>
+          </svg>
+        </button>
+        <div class="footer-menu__inner" id="footer-menu-2" aria-hidden="false">
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">ШБ Турнір</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">ШБ Творчість</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Українські підсказки</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Англійські підсказки</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="footer__col footer__col--white">
+      <p class="footer__text">Якщо ви не маєте часу на заняття українізацією ігор, але небайдужі до теми української мови в іграх, то можете допомогти нашій справі:</p>
+      <nav class="donation footer__donation">
+        <ul class="donation__list">
+          <li class="donation__item"><a class="donation__link" href="#">
+              <div class="donation__pic">
+                <svg class="donation__icon" width="28" height="29">
+                  <use xlink:href="img/sprite.svg#patreon"></use>
+                </svg>
+              </div><span class="donation__title">Patreon</span></a></li>
+          <li class="donation__item"><a class="donation__link" href="#">
+              <div class="donation__pic">
+                <svg class="donation__icon" width="30" height="32">
+                  <use xlink:href="img/sprite.svg#monobank"></use>
+                </svg>
+              </div><span class="donation__title">Монобанка</span></a></li>
+          <li class="donation__item"><a class="donation__link" href="#">
+              <div class="donation__pic">
+                <svg class="donation__icon" width="21" height="29">
+                  <use xlink:href="img/sprite.svg#cofee"></use>
+                </svg>
+              </div><span class="donation__title">Buy me a coffee</span></a></li>
+          <li class="donation__item"><a class="donation__link" href="#">
+              <div class="donation__pic">
+                <svg class="donation__icon" width="23" height="27">
+                  <use xlink:href="img/sprite.svg#donatello"></use>
+                </svg>
+              </div><span class="donation__title">Donatello</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="container footer__bottom-container">
+    <div class="footer__copyright">Copyright &copy; 2024 Шлякбитраф. Усі матеріали на сайті поширюються на умовах ліцензії CC BY-SA 4.0.</div>
+    <div class="footer__dev">Розроблено<a class="footer__dev-link" href="https://shafem.com/" aria-label="Developer link" target="_blank"><img class="footer__dev-img" src="img/shafem.svg" width="103" height="22" loading="lazy" alt="shafem"/></a></div>
+  </div>
+</footer>
+
+        <!-- Mobile Nav -->
+        
+<div class="mobile-nav">
+  <div class="mobile-nav__sidebar">
+    <div class="mobile-nav__inner">
+      <nav class="mobile-nav-menu mobile-nav-menu--visible-md">
+        <ul class="mobile-nav-menu__list">
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link is-active" href="#">Наші проекти</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Новини</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Статті</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Про нас</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Вакансії</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Контакти</a></li>
+        </ul>
+      </nav>
+      <nav class="mobile-nav-menu mobile-nav-menu--hidden-md">
+        <ul class="mobile-nav-menu__list">
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">ШБ турнір</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">ШБ творчість</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Українські підсказки</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Англійські підсказки</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+        
+        <!-- Modals -->
+        
+<div class="modal-wrap">
+  <div class="modal" id="modal-feedback">
+    <div class="modal__inner">
+      <div class="modal__window">
+        <button class="modal__close" aria-label="Close modal" data-modal-close="data-modal-close" type="button">
+          <svg class="modal__close-icon" width="20" height="20">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__content">
+          <h3 class="modal__title">Залишити відгук</h3>
+          <form class="form" id="feedback-form" autocomplete="off" novalidate="novalidate">
+            <div class="form__group">
+              <fieldset class="stars-rating">
+                <input class="stars-rating__input" type="radio" id="star5" name="stars-rating" value="5" checked="checked"/>
+                <label class="stars-rating__label" for="star5" aria-label="5 star">
+                  <svg class="stars-rating__icon" width="35" height="34">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </label>
+                <input class="stars-rating__input" type="radio" id="star4" name="stars-rating" value="4"/>
+                <label class="stars-rating__label" for="star4" aria-label="4 star">
+                  <svg class="stars-rating__icon" width="35" height="34">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </label>
+                <input class="stars-rating__input" type="radio" id="star3" name="stars-rating" value="3"/>
+                <label class="stars-rating__label" for="star3" aria-label="3 star">
+                  <svg class="stars-rating__icon" width="35" height="34">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </label>
+                <input class="stars-rating__input" type="radio" id="star2" name="stars-rating" value="2"/>
+                <label class="stars-rating__label" for="star2" aria-label="2 star">
+                  <svg class="stars-rating__icon" width="35" height="34">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </label>
+                <input class="stars-rating__input" type="radio" id="star1" name="stars-rating" value="1"/>
+                <label class="stars-rating__label" for="star1" aria-label="1 star">
+                  <svg class="stars-rating__icon" width="35" height="34">
+                    <use xlink:href="img/sprite.svg#star"></use>
+                  </svg>
+                </label>
+              </fieldset>
+            </div>
+            <div class="form__group">
+              <input class="input form__input" id="feedbackInputName" type="text" name="feedbackInputName" placeholder="ПІБ *" autocomplete="off" data-error-message="Будь ласка, вкажіть своє імʼя" required="required"/>
+            </div>
+            <div class="form__group">
+              <textarea class="textarea form__input" id="feedbackTextarea" name="feedbackTextarea" data-error-message="Будь ласка, напишіть свій відгук" rows="4" placeholder="Ваш відгук *" autocomplete="off" required="required"></textarea>
+              <div class="form__input-info">Мінімальна кільність 30 символів</div>
+            </div>
+            <button class="button form__button">Відправити</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-like">
+    <div class="modal__inner">
+      <div class="modal__window">
+        <button class="modal__close" aria-label="Close modal" data-modal-close="data-modal-close" type="button">
+          <svg class="modal__close-icon" width="20" height="20">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__content">
+          <h3 class="modal__title">Metro: Last Light Redux</h3>
+          <form class="form" id="like-form" autocomplete="off" novalidate="novalidate">
+            <div class="form__group">
+              <input class="input form__input" id="likeInputName" type="text" name="likeInputName" placeholder="Ім'я *" autocomplete="off" data-error-message="Будь ласка, вкажіть своє імʼя" required="required"/>
+            </div>
+            <div class="form__group">
+              <input class="input form__input" id="likeInputEmail" type="email" name="likeInputEmail" placeholder="Email *" data-error-message="Будь ласка, введіть email" autocomplete="off" required="required"/>
+            </div>
+            <div class="form__group">
+              <textarea class="textarea form__input" id="likeTextarea" name="likeTextarea" data-error-message="Будь ласка, напишіть ваше повідомлення" rows="4" placeholder="Ваше повідомлення *" autocomplete="off" required="required"></textarea>
+            </div>
+            <div class="form__group form__group--center">
+              <div class="checkbox">
+                <input class="checkbox__input" id="likeCheckboxAgree" type="checkbox" name="checkbox" value="true" required="required"/>
+                <label class="checkbox__label" for="likeCheckboxAgree">Погоджуюсь з умовами <a class="checkbox__link" href="#">Політики конфіденційності</a></label>
+              </div>
+            </div>
+            <button class="button form__button">Відправити</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-success">
+    <div class="modal__inner">
+      <div class="modal__window">
+        <button class="modal__close" aria-label="Close modal" data-modal-close="data-modal-close" type="button">
+          <svg class="modal__close-icon" width="20" height="20">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="modal__content modal__content--center">
+          <svg class="modal__icon" width="144" height="132">
+            <use xlink:href="img/sprite.svg#success"></use>
+          </svg>
+          <h3 class="modal__title">Ваша заявка успішно відправлена</h3>
+          <div class="modal__text">
+            <p>Найближчим часом Ми з Вами зв'яжемось.</p>
+            <p><strong>Дякуємо, ви зробили правильний вибір!</strong></p>
+          </div>
+          <button class="button modal__button" type="button" data-modal-close="data-modal-close">Закрити</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        
+    </body>
+</html>

@@ -1,0 +1,71 @@
+.success-section
+    position: relative
+    display: flex
+    align-items: center
+    padding: 30px 0
+    min-height: calc(100svh - var(--header-h))
+    background: var(--blue)
+    overflow: hidden
+
+    @media ($max-md)
+        flex-direction: column
+        align-items: stretch
+        padding: 50px 0 0
+
+    &__bg
+
+        @media ($min-md)
+            position: absolute
+            bottom: 0
+            right: 0
+            display: inline-flex
+            max-width: 60%
+
+        @media ($max-md)
+            display: flex
+            margin: 0 -15px -1px
+
+        &-img
+            max-width: 100%
+            height: auto
+
+            @media ($max-md)
+                width: 100%
+    
+    &__container
+        position: relative
+        z-index: 1
+
+    &__content
+        max-width: 640px
+
+        @media ($max-md)
+            max-width: 100%
+            text-align: center
+    
+    &__text
+        font-size: 32px
+        color: var(--white)
+        line-height: 1.2
+        font-weight: 500
+        margin-bottom: 40px
+
+        @media ($max-md)
+            font-size: 20px
+            margin-bottom: 30px
+
+    &__title
+        font-size: 32px
+        font-weight: 900
+        line-height: 1.2
+        margin-bottom: 40px
+        color: var(--white)
+
+        @media ($max-md)
+            font-size: 20px
+            margin-bottom: 30px
+    
+    &__button
+        
+        @media ($max-md)
+            width: 100%

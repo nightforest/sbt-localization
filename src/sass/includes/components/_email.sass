@@ -1,0 +1,30 @@
+.email
+
+    &-toggle
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 30px
+        height: 30px
+        color: var(--blue)
+        
+    &__title
+        font-size: 18px
+        color: #636363
+
+        @media ($max-md)
+            font-size: 16px
+    
+    &__link
+        font-size: 20px
+        font-weight: 700
+        color: var(--black)
+        transition: color .5s ease
+
+        @media ($max-md)
+            font-size: 16px
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--blue)

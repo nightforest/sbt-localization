@@ -1,0 +1,46 @@
+.catalog-section
+    padding: 60px 0
+
+    @media ($max-md)
+        padding: 30px 0
+
+    &__container
+        max-width: 100%
+        padding: 0 30px
+
+        @media ($max-md)
+            padding: 0 15px
+    
+    &__tags
+        margin-bottom: 40px
+
+        @media ($max-md)
+            margin-bottom: 20px
+            
+    &__list
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+        gap: 30px
+        margin: 0 0 30px
+        padding: 0
+        list-style: none
+
+        @media (max-width: 1800px)
+            grid-template-columns: 1fr 1fr 1fr 1fr
+        
+        @media ($max-xl)
+            grid-template-columns: 1fr 1fr 1fr
+        
+        @media ($max-lg)
+            grid-template-columns: 1fr 1fr
+        
+        @media ($max-md)
+            gap: 10px
+    
+    &__more-button
+        display: flex
+        margin: 0 auto
+        width: 255px
+
+        @media ($max-sm)
+            width: 170px

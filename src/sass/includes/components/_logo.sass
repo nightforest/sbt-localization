@@ -1,0 +1,28 @@
+.logo
+    font-size: 0
+    line-height: 1
+    color: var(--blue)
+
+    &__link
+        position: relative
+        display: inline-flex
+        transition: color .5s ease
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--black)
+
+    &__img
+        max-width: 100%
+        height: auto
+
+        &--hidden-lg
+
+            @media ($max-lg)
+                display: none
+
+        &--visible-lg
+
+            @media ($min-lg)
+                display: none

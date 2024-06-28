@@ -1,0 +1,91 @@
+.donation
+
+    &__list
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 20px
+        margin: 0
+        padding: 0
+        list-style: none
+
+    &__link
+        display: inline-flex
+        align-items: center
+        gap: 12px
+        color: var(--black)
+        font-size: 18px
+        font-weight: 500
+        line-height: 1.2
+        transition: color .5s ease
+
+        @media ($max-xl)
+            font-size: 16px
+
+        @media ($max-md)
+            font-size: 14px
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--blue)
+
+            .donation__pic
+
+                &:before
+                    transform-origin: left top
+                    transform: scale(1, 1)
+        
+        &--white
+            color: var(--white)
+
+            &:hover,
+            &:active,
+            &:focus-visible
+                color: var(--white)
+
+                .donation__pic
+                    color: var(--white)
+
+            .donation__pic
+                background: var(--white)
+                color: var(--black)
+                    
+    &__pic
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 55px
+        min-width: 55px
+        height: 55px
+        background: var(--blue)
+        color: var(--white)
+        transition: color .5s ease, background .5s ease
+        overflow: hidden
+        z-index: $z-index-0
+
+        @media ($max-md)
+            width: 42px
+            min-width: 42px
+            height: 42px
+
+        &:before
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            background: var(--black)
+            content: ""
+            transform: translate(-100%, 0)
+            transition: transform .25s ease
+            z-index: $z-index-minus
+            transform-origin: right top
+            transform: scale(0, 1)
+    
+    &__icon
+
+        @media ($max-md)
+            width: 22px
+            height: 22px
+            

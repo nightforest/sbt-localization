@@ -1,0 +1,58 @@
+.rating
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 3px
+
+    &__item
+        height: 20px
+        width: 20px
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='19' viewBox='0 0 20 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.51056 0L11.7557 6.90983H19.0211L13.1433 11.1803L15.3884 18.0902L9.51056 13.8197L3.63271 18.0902L5.87785 11.1803L0 6.90983H7.26542L9.51056 0Z' fill='%23FEB701'/%3E%3C/svg%3E%0A")
+        background-position: center center
+        background-repeat: no-repeat
+    
+    &[data-rating="4"]
+
+        .rating__item
+
+            &:nth-child(5)
+                background-image: url("data:image/svg+xml,%3Csvg width='20' height='19' viewBox='0 0 20 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.51056 0L11.7557 6.90983H19.0211L13.1433 11.1803L15.3884 18.0902L9.51056 13.8197L3.63271 18.0902L5.87785 11.1803L0 6.90983H7.26542L9.51056 0Z' fill='%23999999'/%3E%3C/svg%3E%0A")
+    
+    &[data-rating="3"]
+
+        .rating__item
+
+            &:nth-child(5),
+            &:nth-child(4)
+                background-image: url("data:image/svg+xml,%3Csvg width='20' height='19' viewBox='0 0 20 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.51056 0L11.7557 6.90983H19.0211L13.1433 11.1803L15.3884 18.0902L9.51056 13.8197L3.63271 18.0902L5.87785 11.1803L0 6.90983H7.26542L9.51056 0Z' fill='%23999999'/%3E%3C/svg%3E%0A")
+    
+    &[data-rating="2"]
+
+        .rating__item
+
+            &:nth-child(5),
+            &:nth-child(4),
+            &:nth-child(3)
+                background-image: url("data:image/svg+xml,%3Csvg width='20' height='19' viewBox='0 0 20 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.51056 0L11.7557 6.90983H19.0211L13.1433 11.1803L15.3884 18.0902L9.51056 13.8197L3.63271 18.0902L5.87785 11.1803L0 6.90983H7.26542L9.51056 0Z' fill='%23999999'/%3E%3C/svg%3E%0A")
+
+    &[data-rating="1"]
+
+        .rating__item
+
+            &:nth-child(5),
+            &:nth-child(4),
+            &:nth-child(3),
+            &:nth-child(2)
+                background-image: url("data:image/svg+xml,%3Csvg width='20' height='19' viewBox='0 0 20 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.51056 0L11.7557 6.90983H19.0211L13.1433 11.1803L15.3884 18.0902L9.51056 13.8197L3.63271 18.0902L5.87785 11.1803L0 6.90983H7.26542L9.51056 0Z' fill='%23999999'/%3E%3C/svg%3E%0A")
+
+    &[data-rating="0"]
+
+        .rating__item
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='19' viewBox='0 0 20 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.51056 0L11.7557 6.90983H19.0211L13.1433 11.1803L15.3884 18.0902L9.51056 13.8197L3.63271 18.0902L5.87785 11.1803L0 6.90983H7.26542L9.51056 0Z' fill='%23999999'/%3E%3C/svg%3E%0A")
+
+    &--md
+
+        .rating__item
+            height: 30px
+            width: 30px
+            background-size: contain

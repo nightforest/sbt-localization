@@ -1,0 +1,58 @@
+.social
+    font-style: normal
+
+    &__title
+        font-size: 11px
+        font-weight: 700
+
+    &__list
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        gap: 15px 25px
+        margin: 0
+        padding: 0
+        list-style: none
+
+        @media ($max-md)
+            gap: 15px
+            justify-content: center
+
+    &__link
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        gap: 3px
+        width: 55px
+        height: 55px
+        line-height: 1
+        color: var(--white)
+        background: var(--black)
+        transition: color .5s ease, background .5s ease
+        overflow: hidden
+        z-index: $z-index-0
+
+        &:before
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            background: var(--white)
+            content: ""
+            transform: translate(-100%, 0)
+            transition: transform .25s ease
+            z-index: $z-index-minus
+            transform-origin: right top
+            transform: scale(0, 1)
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--black)
+
+            &:before
+                transform-origin: left top
+                transform: scale(1, 1)

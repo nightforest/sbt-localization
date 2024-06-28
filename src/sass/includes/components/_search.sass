@@ -1,0 +1,57 @@
+.search
+
+    &-toggle
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 24px
+        height: 24px
+        color: var(--blue)  
+    
+    &-form
+        position: relative
+
+        &:hover
+
+            .search-form__input
+                border-color: var(--blue)
+        
+        &__input
+            height: 34px
+            padding: 4px 30px 4px 0
+            border: none
+            border-bottom: 1px solid var(--white)
+            background: none
+            font-size: 18px
+            color: var(--white)
+
+            @media ($max-md)
+                color: var(--black)
+                border-color: var(--black)
+
+            &::placeholder
+                color: var(--white)
+
+                @media ($max-md)
+                    color: var(--black)
+
+        &__button
+            position: absolute
+            right: 0
+            top: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 24px
+            height: 24px
+            translate: 0 -50% 0
+            color: var(--white)
+            transition: color .5s ease
+
+            @media ($max-md)
+                color: var(--black)
+
+            &:hover,
+            &:active,
+            &:focus-visible
+                color: var(--blue)

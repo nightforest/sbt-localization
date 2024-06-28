@@ -1,0 +1,79 @@
+header#header.header
+    .header__top
+        .container.header__top-container
+            .logo.header__logo
+                a.logo__link(href="#" aria-label="logo")
+                    svg.logo__img.logo__img--hidden-lg(width="343" height="58")
+                        use(xlink:href="img/sprite.svg#logo")
+                    
+                    svg.logo__img.logo__img--visible-lg(width="31" height="36")
+                        use(xlink:href="img/sprite.svg#logo-single")
+            
+            button.search-toggle.header__search-toggle(type="button" data-toggle="search" aria-expanded="false" aria-label="Show search")
+                svg.search-toggle__icon(width="30" height="30")
+                    use(xlink:href="img/sprite.svg#search")
+
+            button.email-toggle.header__email-toggle(type="button" data-toggle="email" aria-expanded="false" aria-label="Show email")
+                svg.email-toggle__icon(width="30" height="30")
+                    use(xlink:href="img/sprite.svg#email")
+
+            .email#email.header__email
+                .email__title Пишіть Нам
+                a.email__link(href="mailto:info@sbt.localization.com.ua") info@sbt.localization.com.ua
+
+            .dropdown.header__lang
+                button.dropdown__toggle(type="button" data-toggle="lang-dropdown" aria-expanded="false") UA
+                    svg.dropdown__toggle-arrow(width="11" height="7")
+                        use(xlink:href="img/sprite.svg#dropdown-arrow")
+                
+                ul#lang-dropdown.dropdown__list(aria-hidden="true")
+                    li.dropdown__item
+                        a.dropdown__link(href="#") EN
+                    
+                    li.dropdown__item
+                        a.dropdown__link(href="#") DE
+            
+            button.burger.header__burger(type="button" aria-expanded="false" data-nav-toggle aria-label="Show menu")
+                .burger__line
+                .burger__line
+                .burger__line
+
+            .header__buttons
+                a.button.button--md.button--outline.header__button(href="#") Поточні проекти
+                a.button.button--md.button--blue.header__button(href="#footer") Підтримайте наc
+
+    .header__bottom
+        .container.header__bottom-container
+            button.menu-button.header__menu-button(type="button" aria-expanded="false" data-nav-toggle aria-label="Show menu")
+                .menu-button__line
+                .menu-button__line
+                .menu-button__line
+
+            nav.menu.header__menu
+                ul.menu__list
+                    li.menu__item
+                        a.menu__link.is-active(href="#") Наші проекти
+
+                    li.menu__item
+                        a.menu__link(href="#") Новини
+                    
+                    li.menu__item
+                        a.menu__link(href="#") Статті
+                    
+                    li.menu__item
+                        a.menu__link(href="#") Про нас
+                    
+                    li.menu__item
+                        a.menu__link(href="#") Вакансії
+                    
+                    li.menu__item
+                        a.menu__link(href="#") Контакти
+
+            .search#search.header__search
+                form.search-form
+                    input.input.search-form__input(type="text" name="inputSearch" placeholder="Пошук" autocomplete="off" required)
+
+                    button.search-form__button(type="button" aria-label="Search")
+                        svg.search-form__button-icon(width="21" height="21")
+                            use(xlink:href="img/sprite.svg#search")
+                            

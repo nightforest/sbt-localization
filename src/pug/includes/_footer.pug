@@ -1,0 +1,103 @@
+footer#footer.footer
+    .container.footer__container
+        .footer__col
+            .footer__logo-group
+                .logo.footer__logo
+                    a.logo__link(href="#" aria-label="logo")
+                        svg.logo__img(width="272" height="46")
+                            use(xlink:href="img/sprite.svg#logo")
+
+                nav.footer-nav
+                    ul.footer-nav__list
+                        li.footer-nav__item
+                            a.footer-nav__link(href="#") Політика конфіденційності
+
+        .footer__col
+            nav.footer-menu
+                button.footer-menu__toggle(type="button" data-trigger="footer-menu-1" aria-expanded="true") Меню
+                    svg.footer-menu__toggle-icon(width="11" height="7")
+                        use(xlink:href="img/sprite.svg#dropdown-arrow")
+                
+                #footer-menu-1.footer-menu__inner(aria-hidden="false")
+                    ul.footer-menu__list
+                        li.footer-menu__item
+                            a.footer-menu__link(href="#") Наші проекти
+                        
+                        li.footer-menu__item
+                            a.footer-menu__link(href="#") Новини
+
+                        li.footer-menu__item
+                            a.footer-menu__link(href="#") Статті
+                        
+                        li.footer-menu__item
+                            a.footer-menu__link(href="#") Про нас
+                        
+                        li.footer-menu__item
+                            a.footer-menu__link(href="#") Вакансії
+                        
+                        li.footer-menu__item
+                            a.footer-menu__link(href="#") Контакти
+
+        .footer__col
+            nav.footer-menu
+                button.footer-menu__toggle(type="button" data-trigger="footer-menu-2" aria-expanded="true") Інформація
+                    svg.footer-menu__toggle-icon(width="11" height="7")
+                        use(xlink:href="img/sprite.svg#dropdown-arrow")
+                
+                #footer-menu-2.footer-menu__inner(aria-hidden="false")
+                    ul.footer-menu__list
+                        li.footer-menu__item
+                            a.footer-menu__link(href="#") ШБ Турнір
+
+                        li.footer-menu__item
+                            a.footer-menu__link(href="#") ШБ Творчість
+
+                        li.footer-menu__item
+                            a.footer-menu__link(href="#") Українські підсказки
+                        
+                        li.footer-menu__item
+                            a.footer-menu__link(href="#") Англійські підсказки
+
+        .footer__col.footer__col--white
+            p.footer__text Якщо ви не маєте часу на заняття українізацією ігор, але небайдужі до теми української мови в іграх, то можете допомогти нашій справі:
+
+            nav.donation.footer__donation
+                ul.donation__list
+                    li.donation__item
+                        a.donation__link(href="#")
+                            .donation__pic
+                                svg.donation__icon(width="28" height="29")
+                                    use(xlink:href="img/sprite.svg#patreon")
+
+                            span.donation__title Patreon
+                    
+                    li.donation__item
+                        a.donation__link(href="#")
+                            .donation__pic
+                                svg.donation__icon(width="30" height="32")
+                                    use(xlink:href="img/sprite.svg#monobank")
+
+                            span.donation__title Монобанка
+                    
+                    li.donation__item
+                        a.donation__link(href="#")
+                            .donation__pic
+                                svg.donation__icon(width="21" height="29")
+                                    use(xlink:href="img/sprite.svg#cofee")
+
+                            span.donation__title Buy me a coffee
+                    
+                    li.donation__item
+                        a.donation__link(href="#")
+                            .donation__pic
+                                svg.donation__icon(width="23" height="27")
+                                    use(xlink:href="img/sprite.svg#donatello")
+
+                            span.donation__title Donatello
+
+    .container.footer__bottom-container
+        .footer__copyright Copyright &copy; 2024 Шлякбитраф. Усі матеріали на сайті поширюються на умовах ліцензії CC BY-SA 4.0.
+
+        .footer__dev Розроблено
+            a.footer__dev-link(href="https://shafem.com/" aria-label="Developer link" target="_blank")
+                img.footer__dev-img(src="img/shafem.svg" width="103" height="22" loading="lazy" alt="shafem")

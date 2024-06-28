@@ -1,0 +1,93 @@
+.modal-wrap
+    #modal-feedback.modal
+        .modal__inner
+            .modal__window
+                button.modal__close(aria-label="Close modal" data-modal-close type="button")
+                    svg.modal__close-icon(width="20" height="20")
+                        use(xlink:href="img/sprite.svg#close")
+
+                .modal__content
+                    h3.modal__title Залишити відгук
+
+                    form.form(id="feedback-form" autocomplete="off" novalidate="novalidate")
+                        .form__group
+                            fieldset.stars-rating
+                                input.stars-rating__input(type="radio" id="star5" name="stars-rating" value="5" checked)
+                                label.stars-rating__label(for="star5" aria-label="5 star")
+                                    svg.stars-rating__icon(width="35" height="34")
+                                        use(xlink:href="img/sprite.svg#star")
+                                input.stars-rating__input(type="radio" id="star4" name="stars-rating" value="4")
+                                label.stars-rating__label(for="star4" aria-label="4 star")
+                                    svg.stars-rating__icon(width="35" height="34")
+                                        use(xlink:href="img/sprite.svg#star")
+                                input.stars-rating__input(type="radio" id="star3" name="stars-rating" value="3")
+                                label.stars-rating__label(for="star3" aria-label="3 star")
+                                    svg.stars-rating__icon(width="35" height="34")
+                                        use(xlink:href="img/sprite.svg#star")
+                                input.stars-rating__input(type="radio" id="star2" name="stars-rating" value="2")
+                                label.stars-rating__label(for="star2" aria-label="2 star")
+                                    svg.stars-rating__icon(width="35" height="34")
+                                        use(xlink:href="img/sprite.svg#star")
+                                input.stars-rating__input(type="radio" id="star1" name="stars-rating" value="1")
+                                label.stars-rating__label(for="star1" aria-label="1 star")
+                                    svg.stars-rating__icon(width="35" height="34")
+                                        use(xlink:href="img/sprite.svg#star")
+
+                        .form__group
+                            input#feedbackInputName.input.form__input(type="text" name="feedbackInputName" placeholder="ПІБ *" autocomplete="off" data-error-message="Будь ласка, вкажіть своє імʼя" required)
+
+                        .form__group
+                            textarea#feedbackTextarea.textarea.form__input(name="feedbackTextarea" data-error-message="Будь ласка, напишіть свій відгук" rows="4" placeholder="Ваш відгук *" autocomplete="off" required)
+
+                            .form__input-info Мінімальна кільність 30 символів
+
+                        button.button.form__button Відправити
+
+    #modal-like.modal
+        .modal__inner
+            .modal__window
+                button.modal__close(aria-label="Close modal" data-modal-close type="button")
+                    svg.modal__close-icon(width="20" height="20")
+                        use(xlink:href="img/sprite.svg#close")
+
+                .modal__content
+                    h3.modal__title Metro: Last Light Redux
+
+                    form.form(id="like-form" autocomplete="off" novalidate="novalidate")
+                        .form__group
+                            input#likeInputName.input.form__input(type="text" name="likeInputName" placeholder="Ім'я *" autocomplete="off" data-error-message="Будь ласка, вкажіть своє імʼя" required)
+
+                        .form__group
+                            input#likeInputEmail.input.form__input(type="email" name="likeInputEmail" placeholder="Email *" data-error-message="Будь ласка, введіть email" autocomplete="off" required)
+
+                        .form__group
+                            textarea#likeTextarea.textarea.form__input(name="likeTextarea" data-error-message="Будь ласка, напишіть ваше повідомлення" rows="4" placeholder="Ваше повідомлення *" autocomplete="off" required)
+
+
+                        .form__group.form__group--center
+                            .checkbox
+                                input.checkbox__input#likeCheckboxAgree(type="checkbox" name="checkbox" value="true" required)
+                                label.checkbox__label(for="likeCheckboxAgree") Погоджуюсь з умовами 
+                                    a.checkbox__link(href="#") Політики конфіденційності
+
+                        button.button.form__button Відправити
+
+    #modal-success.modal
+        .modal__inner
+            .modal__window
+                button.modal__close(aria-label="Close modal" data-modal-close type="button")
+                    svg.modal__close-icon(width="20" height="20")
+                        use(xlink:href="img/sprite.svg#close")
+
+                .modal__content.modal__content--center
+                    svg.modal__icon(width="144" height="132")
+                        use(xlink:href="img/sprite.svg#success")
+
+                    h3.modal__title Ваша заявка успішно відправлена
+
+                    .modal__text
+                        p Найближчим часом Ми з Вами зв'яжемось.
+                        p
+                            strong Дякуємо, ви зробили правильний вибір!
+
+                    button.button.modal__button(type="button" data-modal-close) Закрити

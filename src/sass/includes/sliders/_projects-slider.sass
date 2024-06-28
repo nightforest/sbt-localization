@@ -1,0 +1,42 @@
+.projects-slider
+    position: relative
+    overflow: visible
+    padding: 0 25px
+
+    @media ($max-lg)
+        padding: 0
+        margin-bottom: 25px
+
+    &__swiper
+
+        @media ($max-lg)
+            padding: 0 10px 30px
+
+    &__wrapper
+
+        @media ($min-lg)
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr
+            gap: 30px
+            margin: 0
+            padding: 0
+        
+        @media ($min-xl)
+            grid-template-columns: 1fr 1fr 1fr 1fr
+
+        @media (min-width: 1800px)
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+
+    &__slide
+
+        // @media (min-width: 1800px)
+        //     grid-column: 3 span
+
+        @media ($min-md)
+        //     width: 350px
+            // grid-column: 2 span
+
+    &__scrollbar
+
+        @media ($min-lg)
+            display: none

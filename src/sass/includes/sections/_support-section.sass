@@ -1,0 +1,26 @@
+.support-section
+    padding: 60px 0
+
+    @media ($max-md)
+        padding: 30px 0
+
+    &__container
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        gap: 30px
+
+        @media ($max-lg)
+            display: flex
+            flex-direction: column
+
+    &__left
+        grid-column: 8 span
+
+        @media ($max-xl)
+            grid-column: 7 span
+    
+    &__right
+        grid-column: 4 span
+
+        @media ($max-xl)
+            grid-column: 5 span

@@ -1,0 +1,66 @@
+.vacancy-card
+    padding: 25px 30px 30px
+    border: 1px solid var(--black)
+    transition: color .5s ease, border-color .5s ease, background .5s ease
+
+    @media ($max-md)
+        padding: 20px
+
+    &:hover
+        background: var(--blue)
+        border-color: var(--blue)
+        color: var(--white)
+
+        .vacancy-card__button
+            background: var(--black)
+
+            &:before
+                background: var(--white)
+            
+            &:hover,
+            &:active,
+            &:focus-visible
+                color: var(--black)
+
+        .vacancy-card__location-icon
+            color: var(--white)
+
+    &__title
+        margin-bottom: 10px
+        font-size: 24px
+        font-weight: 900
+
+        @media ($max-md)
+            font-size: 18px
+
+    &__text
+        margin-bottom: 15px
+        font-size: 18px
+
+        @media ($max-md)
+            font-size: 14px
+
+        p
+
+            &:not(:last-child)
+                margin-bottom: 1rem
+    
+    &__bottom
+        display: flex
+        align-items: flex-end
+        justify-content: space-between
+        gap: 15px
+
+        @media ($max-md)
+            flex-direction: column-reverse
+            align-items: flex-start
+    
+    &__location
+        display: flex
+        align-items: center
+        gap: 10px
+        font-weight: 900
+
+        &-icon
+            color: var(--blue)
+            transition: color .5s ease

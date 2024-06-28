@@ -1,0 +1,144 @@
+.header
+    position: relative
+    z-index: $z-index-3
+
+    @media ($max-md)
+        box-shadow: 0 0 0 1px #e5e5e5
+
+    &__top
+        position: relative
+        background: var(--white)
+        padding: 20px 0
+
+        @media ($max-md)
+            padding: 15px 0
+
+        &-container
+            display: flex
+            align-items: center
+            gap: 20px
+
+            @media ($max-lg)
+                gap: 15px
+            
+            @media ($max-md)
+                flex-wrap: wrap
+
+    &__bottom
+        background: var(--black)
+
+        &-container
+            display: flex
+            align-items: center
+            justify-content: space-between
+            gap: 20px
+
+            @media ($max-lg)
+                gap: 15px
+
+    &__logo
+        margin-right: auto
+
+    &__email
+
+        &-toggle
+
+            @media ($min-xl)
+                display: none
+        
+        @media ($max-xl)
+            position: absolute
+            top: 100%
+            left: 50%
+            width: auto
+            padding: 12px 15px
+            background: var(--white)
+            box-shadow: 2px 23px 36px 0 rgba(0, 0, 0, .1)
+            opacity: 0
+            visibility: hidden
+            transform: translateY(20px) translateX(-50%)
+            transition: opacity .25s ease, transform .25s ease, visibility .25s ease
+            z-index: $z-index-2
+
+            &[aria-hidden="false"]
+                opacity: 1
+                visibility: visible
+                transform: translateY(0) translateX(-50%)
+                transition: opacity .5s ease, transform .5s ease, visibility .5s ease
+
+        @media ($max-lg)
+            top: 60px
+
+    &__buttons
+        display: flex
+        gap: 20px
+
+        @media ($max-lg)
+            gap: 15px
+        
+        @media ($max-md)
+            width: 100%
+    
+    &__button
+
+        @media ($max-lg)
+            min-width: 150px
+            padding: 5px
+            font-size: 16px
+
+        @media ($max-md)
+            width: 100%
+            min-width: 0
+
+    &__burger
+
+        @media ($min-md)
+            display: none
+
+    &__search-toggle
+
+        @media ($min-lg)
+            display: none
+
+    &__search
+        max-width: 285px
+        width: 100%
+
+        @media ($max-xxl)
+            max-width: 220px
+        
+        @media ($max-lg)
+            position: absolute
+            top: 100%
+            left: 0
+            width: 100%
+            max-width: 100%
+            padding: 12px 15px
+            background: var(--black)
+            opacity: 0
+            visibility: hidden
+            transform: translateY(20px)
+            transition: opacity .25s ease, transform .25s ease, visibility .25s ease
+            z-index: $z-index-2
+
+            &[aria-hidden="false"]
+                opacity: 1
+                visibility: visible
+                transform: translateY(0)
+                transition: opacity .5s ease, transform .5s ease, visibility .5s ease
+
+        @media ($max-md)
+            top: auto
+            bottom: 15px
+            background: var(--white)
+            box-shadow: 2px 23px 36px 0 rgba(0, 0, 0, .1)
+
+    &__menu
+
+        @media ($max-md)
+            display: none
+    
+    &__menu-button
+
+        @media ($max-md)
+            display: none

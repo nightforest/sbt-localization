@@ -1,0 +1,14 @@
+section.banner-section
+    picture.banner-section__bg.animation-down(data-delay="0")
+        source(srcset="img/banner-img-mobile@2x.webp 2x, img/banner-img-mobile.webb" width="375" height="262" media="(max-width: 767.98px)")
+        img.banner-section__bg-img(src="img/banner-img.webp" srcset="img/banner-img@2x.webp 2x" width="1175" height="707" alt="alt")
+
+    .container.banner-section__container
+        .banner-section__content
+            h1.banner-section__title.animation-down(data-delay="0.4") ШЛЯКБИТРАФ
+            p.banner-section__descr.animation-down(data-delay="0.6") ПЕРЕКЛАД ІГОР УКРАЇНСЬКОЮ ШЛЯХЕТНО ТА ВЛУЧНО!
+            a.button.button--white-hover.banner-section__button.animation-down(data-delay="0.8" href="#") Наші проекти 
+
+        a.banner-section__next(href="#projects-section")
+            svg.banner-section__next-icon(width="23" height="13")
+                use(xlink:href="img/sprite.svg#dropdown-arrow")

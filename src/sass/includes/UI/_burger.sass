@@ -1,0 +1,31 @@
+.burger
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: 6px
+    width: 42px
+    height: 42px
+    min-width: 42px
+    padding: 4px
+    background: var(--blue)
+    transition: all .5s ease
+
+    &.is-active
+
+        .burger__line
+
+            &:first-child
+                transform: rotate(45deg) translate(5px, 5px)
+
+            &:nth-child(2)
+                opacity: 0
+
+            &:last-child
+                transform: rotate(-45deg) translate(5px, -5px)
+
+    &__line
+        width: 21px
+        height: 1px
+        background: var(--white)
+        transition: transform .5s ease

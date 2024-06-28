@@ -1,0 +1,32 @@
+.feed-section
+    padding: 60px 0
+
+    @media ($max-md)
+        padding: 30px 0
+    
+    &__tags
+        margin-bottom: 40px
+
+        @media ($max-md)
+            margin-bottom: 20px
+            
+    &__list
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        gap: 30px
+        margin: 0 0 40px
+        padding: 0
+        list-style: none
+
+        @media ($max-md)
+            margin-bottom: 30px
+
+        @media ($max-sm)
+            display: flex
+            flex-direction: column
+
+    &__item
+        grid-column: 4 span
+
+        @media ($max-xl)
+            grid-column: 6 span

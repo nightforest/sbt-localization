@@ -1,0 +1,81 @@
+section.contacts-section.contacts-section--white
+    .container.contacts-section__container
+        h2.section-title.contacts-section__title Зв'яжіться з нами
+
+        form.form.contacts-section__form(id="contacts-form" autocomplete="off" novalidate="novalidate")
+            .form__row
+                .form__col.form__col--4
+                    input#inputName.input.form__input(type="text" name="inputName" placeholder="Ім’я *" data-error-message="Будь ласка, вкажіть своє імʼя" autocomplete="off" required)
+                
+                .form__col.form__col--4
+                    input#inputEmail.input.form__input(type="email" name="inputEmail" placeholder="Email *" data-error-message="Будь ласка, введіть email" autocomplete="off" required)
+
+                .form__col.form__col--4
+                    select#selectTheme.select.sort-form__select(name="orderSelectCity5" aria-label="Select" data-error-message="Будь ласка, виберіть тему" required)
+                        option(value="") Виберіть тему *
+                        option(value="1") Тема 1
+                        option(value="2") Тема 2
+                        option(value="3") Тема 3
+                        option(value="4") Тема 4
+                        option(value="5") Тема 5
+                        option(value="6") Тема 6
+
+            .form__group
+                textarea#comment.textarea(name="comment" rows="5" placeholder="Ваше повідомлення *" autocomplete="off" data-error-message="Будь ласка, заповніть поле" required)
+
+            .form__row
+                .form__col.form__col--3
+                    .form__info Завантажити зняток екрану (jpg, jpeg, png, не більше 5мб)
+
+                .form__col.form__col--3
+                    .file
+                        input#file1.file__input(type="file" name="file" accept=".doc, .docx, .rtf, .txt, .odt, .pdf")
+                        
+                        label.file__label(for="file1")
+                            span.file__caption Завантажити файл
+                                svg.file__icon(width="24" height="24")
+                                    use(xlink:href="img/sprite.svg#file")
+
+                            span.file__name
+
+                            button.file__clear(type="button")
+                                svg.file__clear-icon(width="17" height="17")
+                                    use(xlink:href="img/sprite.svg#close")
+
+                .form__col.form__col--3
+                    .file
+                        input#file2.file__input(type="file" name="file" accept=".doc, .docx, .rtf, .txt, .odt, .pdf")
+                        
+                        label.file__label(for="file2")
+                            span.file__caption Завантажити файл
+                                svg.file__icon(width="24" height="24")
+                                    use(xlink:href="img/sprite.svg#file")
+
+                            span.file__name
+
+                            button.file__clear(type="button")
+                                svg.file__clear-icon(width="17" height="17")
+                                    use(xlink:href="img/sprite.svg#close")
+                
+                .form__col.form__col--3
+                    .file
+                        input#file3.file__input(type="file" name="file" accept=".doc, .docx, .rtf, .txt, .odt, .pdf")
+                        
+                        label.file__label(for="file3")
+                            span.file__caption Завантажити файл
+                                svg.file__icon(width="24" height="24")
+                                    use(xlink:href="img/sprite.svg#file")
+
+                            span.file__name
+
+                            button.file__clear(type="button")
+                                svg.file__clear-icon(width="17" height="17")
+                                    use(xlink:href="img/sprite.svg#close")
+
+            .form__group.form__group--center
+                .checkbox
+                    input.checkbox__input#checkboxAgree(type="checkbox" name="checkbox" value="true" required)
+                    label.checkbox__label(for="checkboxAgree") Погоджуюсь з умовами 
+                        a.checkbox__link(href="#") Політики конфіденційності
+
+            button.button.form__button Відправити

@@ -1,0 +1,116 @@
+.button
+    position: relative
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    gap: 12px
+    text-align: center
+    width: auto
+    min-width: 255px
+    height: 65px
+    margin: 0
+    border: none
+    padding: 4px 20px
+    box-sizing: border-box
+    -webkit-tap-highlight-color: transparent
+    outline: none
+    cursor: pointer
+    user-select: none
+    vertical-align: middle
+    appearance: none
+    text-decoration: none
+    text-transform: none
+    font-weight: 700
+    font-size: 16px
+    line-height: 1.2
+    letter-spacing: 0
+    border-radius: 0
+    background: var(--black)
+    color: var(--white)
+    box-shadow: none
+    transition: color .5s ease, background .5s ease
+    overflow: hidden
+    z-index: $z-index-0
+
+    @media ($max-md)
+        height: 50px
+        min-width: 170px
+
+    &:before
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background: var(--blue)
+        content: ""
+        transform: translate(-100%, 0)
+        transition: transform .25s ease
+        z-index: $z-index-minus
+        transform-origin: right top
+        transform: scale(0, 1)
+
+    &:hover,
+    &:active,
+    &:focus-visible
+        outline: none
+        background: var(--black)
+        color: var(--white)
+
+        &:before
+            transform-origin: left top
+            transform: scale(1, 1)
+
+    &:disabled
+        background: var(--grey-light) !important
+        border-color: var(--grey-light) !important
+        color: var(--grey) !important
+        cursor: not-allowed
+
+        &:before
+            display: none
+
+    &__icon
+        min-width: 17px
+        transition: transform .5s ease
+        
+    &--blue
+        background: var(--blue)
+        color: var(--white)
+
+        &:before
+            background: var(--black)
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            background: var(--blue)
+            color: var(--white)
+
+    &--outline
+        border: 1px solid var(--black)
+        background: none
+        color: var(--black)
+
+        &:before
+            background: var(--black)
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            background: none
+            color: var(--white)
+
+    &--md
+        min-width: 190px
+        height: 55px
+    
+    &--white-hover
+
+        &:before
+            background: var(--white)
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--black)

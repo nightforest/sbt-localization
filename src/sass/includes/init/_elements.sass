@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after
+    box-sizing: border-box
+
+// *
+//     outline: 4px solid red
+
+html
+    position: relative
+    min-height: 100%
+    scroll-behavior: smooth
+
+::selection
+    background: var(--blue)
+    color: var(--white)
+
+body
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+    font-size: 16px
+    line-height: 1.4
+    font-family: var(--font)
+    font-weight: 400
+    color: var(--black)
+    background: var(--white)
+    backface-visibility: hidden
+    -webkit-font-smoothing: antialiased
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    font-weight: 700
+    margin: 0
+
+a
+    text-decoration: none
+    color: var(--blue)
+
+    &:hover,
+    &:active
+        color: var(--blue)
+        text-decoration: none
+
+    &:focus-visible
+        color: var(--blue)
+        outline: none
+        text-decoration: none
+
+    // &:visited
+    //     color: inherit
+    //     font-weight: 400
+
+.blue-link
+    color: var(--blue)
+    text-decoration-line: underline
+    text-decoration-thickness: 1px
+    text-underline-offset: 4px
+    transition: color .5s ease
+
+    &:hover,
+    &:active,
+    &:focus-visible
+        text-decoration: none
+        color: var(--blue)
+
+.blue-color
+    color: var(--blue)
+    
+p
+    margin: 0
+
+strong
+    font-weight: 700
+    
+.container
+    width: 100%
+    padding: 0 15px
+    margin: 0 auto
+
+    @media ($min-sm)
+        max-width: 100%
+
+    @media ($min-md)
+        max-width: 768px
+
+    @media ($min-lg)
+        max-width: 968px
+
+    @media ($min-xl)
+        max-width: 1260px
+    
+    @media ($min-xxl)
+        max-width: 1560px
+
+.main
+    flex: 1
+
+    &--center
+        display: flex
+        align-items: center
+        width: 100%
+
+.scroll-disabled
+    overflow-y: hidden
+
+.animation-fade,
+.animation-left,
+.animation-right,
+.animation-down,
+.animation-up
+    opacity: 0
+
+input,
+textarea,
+button,
+select,
+a
+    -webkit-tap-highlight-color: transparent
+
+.iti
+    display: block
+
+.iti--separate-dial-code .iti__selected-flag
+    background: none !important
+    font-size: 16px
+    outline: none
+    font-family: Arial !important
