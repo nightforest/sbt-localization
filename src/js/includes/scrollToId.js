@@ -12,9 +12,9 @@ const scrollToId = () => {
     let headerSectionHeight = 0;
 
     function heightDetect () {
-        headerHeight = document.querySelector('.header').offsetHeight | 0;
-        pageNavHeight = document.querySelector('.page-nav').offsetHeight | 0;
-        headerSectionHeight = document.querySelector('.header-section').offsetHeight | 0;
+        headerHeight = document.querySelector('.header')?.offsetHeight | 0;
+        pageNavHeight = document.querySelector('.page-nav')?.offsetHeight | 0;
+        headerSectionHeight = document.querySelector('.header-section')?.offsetHeight | 0;
     }
 
     heightDetect();
@@ -53,7 +53,7 @@ const scrollToId = () => {
         }
     });
 
-    pageNavLinks.forEach(item => {
+    pageNavLinks?.forEach(item => {
         item.addEventListener('click', e => {
             if (window.innerWidth < 768) {
                 pageNavToggle?.setAttribute('aria-expanded', false);

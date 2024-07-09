@@ -27,6 +27,12 @@ const newsSlider = () => {
             1260: {
                 slidesPerView: 3,
             },
+            1560: {
+                slidesPerView: 4,
+            },
+            2200: {
+                slidesPerView: 5,
+            },
         },
     });
 }
